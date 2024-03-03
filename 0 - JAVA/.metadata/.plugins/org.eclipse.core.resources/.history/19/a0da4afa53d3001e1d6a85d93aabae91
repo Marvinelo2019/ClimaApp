@@ -1,0 +1,40 @@
+package org.marvinlopez.servicio;
+
+import java.util.List;
+
+import org.marvinlopez.bean.Llamada;
+
+public interface CentralTelefonica {
+	 
+	public static final List<Llamada> llamadasRegistradas = null;
+
+    // Método para registrar una llamada
+    public static void registrarLlamada(Llamada llamada) {
+        llamadasRegistradas.add(llamada);
+    }
+
+    // Método para obtener el número total de llamadas registradas
+    public static int obtenerNumeroTotalLlamadas() {
+        return llamadasRegistradas.size();
+    }
+
+    // Método para obtener la facturación total de todas las llamadas
+    public static double obtenerFacturacionTotal() {
+        double facturacionTotal = 0.0;
+        for (Llamada llamada : llamadasRegistradas) {
+            facturacionTotal += llamada.getCostoTotal();
+        }
+        return facturacionTotal;
+    }
+
+    // Método para mostrar todas las llamadas registradas
+    public static void mostrarLlamadasRegistradas() {
+        System.out.println("Llamadas registradas en la central telefónica:");
+        for (Llamada llamada : llamadasRegistradas) {
+            llamada.mostrarInformacionLlamada();
+        }
+    }
+
+	void registrarLlamada();
+
+}

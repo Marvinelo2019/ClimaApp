@@ -1,0 +1,32 @@
+package org.marvinlopez.sistema;
+
+import org.marvinlopez.bean.Llamada;
+import org.marvinlopez.bean.LlamadaInterior;
+import org.marvinlopez.servicio.CentralTelefonica;
+
+public class Main {
+	    static void main(String[] args) {
+        // Crear una instancia de la central telefónica
+        CentralTelefonica central = new CentralTelefonica();
+
+        // Registrar algunas llamadas
+        LlamadaLocal llamadaLocal1 = new LlamadaLocal("123456789", "987654321", 60);
+        LlamadaInterior llamadaInterior1 = new LlamadaInterior("987654321", "123456789", 120, 1);
+        LlamadaInterior llamadaInterior2 = new LlamadaInterior("789456123", "987654321", 180, 3);
+
+        // Registrar las llamadas en la central telefónica
+        central.registrarLlamada(llamadaLocal1);
+        central.registrarLlamada(llamadaInterior1);
+        central.registrarLlamada(llamadaInterior2);
+
+        // Obtener el informe
+        int numeroTotalLlamadas = central.getNumeroTotalLlamadas();
+        double facturacionTotal = central.getFacturacionTotal();
+
+        // Mostrar el informe por pantalla
+        System.out.println("Informe de la central telefónica:");
+        System.out.println("Número total de llamadas: " + numeroTotalLlamadas);
+        System.out.println("Facturación total: $" + facturacionTotal);
+    }
+
+}

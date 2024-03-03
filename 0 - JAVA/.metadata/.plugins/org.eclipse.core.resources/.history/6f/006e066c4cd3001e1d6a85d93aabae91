@@ -1,0 +1,11 @@
+package org.marvinlopez.servicio;
+
+import org.marvinlopez.bean.LlamadaLocal;
+import org.marvinlopez.bean.LlamadaInterior;
+
+
+public interface CentralTelefonica {
+	 
+	 
+
+}

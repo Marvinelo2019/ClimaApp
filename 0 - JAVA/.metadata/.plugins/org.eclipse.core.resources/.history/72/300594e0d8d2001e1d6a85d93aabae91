@@ -1,0 +1,25 @@
+package org.marvinlopez.servicio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public interface CentralTelefonica {
+	 
+	    private List<Llamada> llamadas = new ArrayList<>();
+
+	    public void registrarLlamada(Llamada llamada) {
+	        llamadas.add(llamada);
+	    }
+
+	    public int getNumeroTotalLlamadas() {
+	        return llamadas.size();
+	    }
+
+	    public double getFacturacionTotal() {
+	        double facturacionTotal = 0.0;
+	        for (Llamada llamada : llamadas) {
+	            facturacionTotal += llamada.getCostoTotal();
+	        }
+	        return facturacionTotal;
+	    }
+	}

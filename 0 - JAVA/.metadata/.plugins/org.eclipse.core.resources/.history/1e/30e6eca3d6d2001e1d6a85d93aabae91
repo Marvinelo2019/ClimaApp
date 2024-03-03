@@ -1,0 +1,16 @@
+package org.marvinlopez.sistema;
+
+
+public class Main {
+	    static void main(String[] args) {
+      
+        
+       
+
+        // Mostrar el informe por pantalla
+        System.out.println("Informe de la central telefónica:");
+        System.out.println("Número total de llamadas: ");
+        System.out.println("Facturación total: $" );
+    }
+
+}

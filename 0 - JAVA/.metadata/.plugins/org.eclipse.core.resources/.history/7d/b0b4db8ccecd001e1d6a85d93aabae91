@@ -1,0 +1,6 @@
+package org.marvinlopez.bean;
+
+public class Profesor extends Persona {
+	
+	
+}

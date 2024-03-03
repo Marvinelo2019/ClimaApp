@@ -1,0 +1,39 @@
+package org.marvinlopez.bean;
+
+import org.marvinlopez.servicio.CentralTelefonica;
+
+public class LlamadaInterior extends Llamada implements CentralTelefonica {
+		int franjaHoraria;
+		static final double[] COSTOS_POR_FRANJA = {0.20, 0.35, 0.85};
+		
+		
+		/**
+		 * @return the franjaHoraria
+		 */
+		public int getFranjaHoraria() {
+			return franjaHoraria;
+		}
+
+
+		/**
+		 * @param franjaHoraria the franjaHoraria to set
+		 */
+		public void setFranjaHoraria(int franjaHoraria) {
+			this.franjaHoraria = franjaHoraria;
+		}
+
+
+		/**
+		 * @return the costosPorFranja
+		 */
+		public static double[] getCostosPorFranja() {
+			return COSTOS_POR_FRANJA;
+		}
+
+
+		@Override
+		public void registrarLlamada() {
+			// TODO Auto-generated method stub
+			
+		}
+}

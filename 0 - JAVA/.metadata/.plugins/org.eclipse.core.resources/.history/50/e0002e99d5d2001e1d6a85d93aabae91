@@ -1,0 +1,6 @@
+package org.marvinlopez.bean;
+
+public class LlamadaLocal extends Llamada {
+
+	static final double COSTO_SEGUNDO = 0.25;
+}

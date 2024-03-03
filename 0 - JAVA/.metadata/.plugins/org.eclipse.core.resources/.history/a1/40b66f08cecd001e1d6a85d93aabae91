@@ -1,0 +1,16 @@
+package org.marvinlopez.bean;
+
+import org.marvinlopez.utilities.IOperaciones;
+
+public class Estudiante extends Persona implements IOperaciones {
+	private String carne;
+
+	public String getCarne() {
+		return carne;
+	}
+
+	public void setCarne(String carne) {
+		this.carne = carne;
+	}
+	
+}

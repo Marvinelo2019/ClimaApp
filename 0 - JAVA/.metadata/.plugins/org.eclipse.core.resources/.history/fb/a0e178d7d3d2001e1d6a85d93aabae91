@@ -1,0 +1,26 @@
+package org.marvinlopez.servicio;
+
+import org.marvinlopez.bean.Llamada;
+import org.marvinlopez.bean.LlamadaInterior;
+import org.marvinlopez.bean.LlamadaLocal;
+
+public class CentralTelefonica {
+	 private List<Llamada> llamadas = new ArrayList<>();
+
+	    public void registrarLlamada(Llamada llamada) {
+	        llamadas.add(llamada);
+	    }
+
+	    public int getNumeroTotalLlamadas() {
+	        return llamadas.size();
+	    }
+
+	    public double getFacturacionTotal() {
+	        double facturacionTotal = 0.0;
+	        for (Llamada llamada : llamadas) {
+	            facturacionTotal += llamada.getCostoTotal();
+	        }
+	        return facturacionTotal;
+	    }
+
+}

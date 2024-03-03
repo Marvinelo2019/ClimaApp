@@ -1,0 +1,33 @@
+package org.marvinlopez.bean;
+
+import org.marvinlopez.servicio.CentralTelefonica;
+
+public class LlamadaLocal extends Llamada {
+
+	private static final double COSTO_SEGUNDO_LOCAL = 0.25;
+
+    // Constructor
+    public LlamadaLocal(String numeroOrigen, String numeroDestino, int duracionSegundos) {
+        super(numeroOrigen, numeroDestino, duracionSegundos);
+        calcularCostoTotal();
+    }
+
+    // Método para calcular el costo total de la llamada local
+    @Override
+    public void calcularCostoTotal() {
+        setCostoTotal(COSTO_SEGUNDO_LOCAL * getDuracionSegundos());
+    }
+
+	/**
+	 * @return the costoSegundoLocal
+	 */
+	public static double getCostoSegundoLocal() {
+		return COSTO_SEGUNDO_LOCAL;
+	}
+
+	@Override
+	public void registrarLlamada() {
+		// TODO Auto-generated method stub
+		
+	}
+}

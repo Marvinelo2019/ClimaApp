@@ -1,0 +1,16 @@
+package org.marvinlopez.bean;
+
+public class Estudiante {
+	int Id;
+	String apellidos;
+	String nombres;
+	String email;
+	String direccion;
+	String telefono;
+	
+	void registrarAsistencia() {
+		
+		
+		
+	}
+}

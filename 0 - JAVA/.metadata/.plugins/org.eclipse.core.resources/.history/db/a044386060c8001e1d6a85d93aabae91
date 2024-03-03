@@ -1,0 +1,17 @@
+package org.marvinlopez.bean;
+
+public abstract class Persona {
+	int Id;
+	String apellidos;
+	String nombres;
+	String email;
+	String direccion;
+	String telefono;
+	String dpi;
+	
+	void registrarAsistencia() {
+		
+		
+	}
+
+}

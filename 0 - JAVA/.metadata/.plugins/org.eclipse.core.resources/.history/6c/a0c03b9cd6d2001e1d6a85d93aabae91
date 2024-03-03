@@ -1,0 +1,21 @@
+package org.marvinlopez.sistema;
+
+import org.marvinlopez.bean.Llamada;
+import org.marvinlopez.bean.LlamadaInterior;
+import org.marvinlopez.bean.LlamadaLocal;
+import org.marvinlopez.servicio.CentralTelefonica;
+
+public class Main {
+	    static void main(String[] args) {
+      
+        CentralTelefonica central = new CentralTelefonica();
+
+       
+
+        // Mostrar el informe por pantalla
+        System.out.println("Informe de la central telefónica:");
+        System.out.println("Número total de llamadas: ");
+        System.out.println("Facturación total: $" );
+    }
+
+}

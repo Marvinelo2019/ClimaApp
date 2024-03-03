@@ -1,0 +1,6 @@
+package org.marvinlopez.bean;
+
+public class LlamadaInterior extends Llamada {
+		int franjaHoraria;
+		static final double[] COSTOS_POR_FRANJA = {0.20, 0.35, 0.85};
+}

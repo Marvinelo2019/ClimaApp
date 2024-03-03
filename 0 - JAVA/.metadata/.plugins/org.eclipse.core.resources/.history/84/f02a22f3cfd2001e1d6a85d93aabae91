@@ -1,0 +1,5 @@
+package org.marvinlopez.bean;
+
+public class LlamadaInterior {
+
+}

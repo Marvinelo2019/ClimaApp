@@ -1,0 +1,13 @@
+package org.marvinlopez.sistema;
+
+import org.marvinlopez.bean.Estudiante;
+import org.marvinlopez.bean.Profesor;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

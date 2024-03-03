@@ -1,0 +1,36 @@
+package org.marvinlopez.bean;
+
+import org.marvinlopez.utilities.IOperaciones;
+
+public class Profesor extends Persona implements IOperaciones {
+
+		private Long sueldo;
+		
+	/**
+		 * @return the sueldo
+		 */
+		public long getSueldo() {
+			return sueldo;
+		}
+
+		/**
+		 * @param sueldo the sueldo to set
+		 */
+		public void setSueldo(long sueldo) {
+			this.sueldo = sueldo;
+		}
+
+	@Override
+	public void enviarNotificacion() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void revisarAsistencia() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

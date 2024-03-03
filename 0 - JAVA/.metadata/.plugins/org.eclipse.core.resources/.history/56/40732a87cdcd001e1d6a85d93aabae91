@@ -1,0 +1,14 @@
+package org.marvinlopez.bean;
+
+public class Estudiante extends Persona {
+	private String carne;
+
+	public String getCarne() {
+		return carne;
+	}
+
+	public void setCarne(String carne) {
+		this.carne = carne;
+	}
+	
+}

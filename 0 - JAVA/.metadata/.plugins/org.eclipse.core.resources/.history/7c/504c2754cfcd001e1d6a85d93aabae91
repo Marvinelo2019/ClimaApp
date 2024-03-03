@@ -1,0 +1,20 @@
+package org.marvinlopez.bean;
+
+import org.marvinlopez.utilities.IOperaciones;
+
+public class Profesor extends Persona implements IOperaciones {
+
+	@Override
+	public void enviarNotificacion() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void revisarAsistencia() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

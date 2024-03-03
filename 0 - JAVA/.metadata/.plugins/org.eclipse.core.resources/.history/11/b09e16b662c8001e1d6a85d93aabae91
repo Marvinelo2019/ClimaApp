@@ -1,0 +1,28 @@
+package org.marvinlopez.sistema;
+
+import org.marvinlopez.bean.Estudiante;
+import org.marvinlopez.bean.Profesor;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Estudiante marvinGilberto = new Estudiante();
+		
+		marvinGilberto.setId(202401);
+		marvinGilberto.setNombres("");
+		marvinGilberto.setApellidos("Lopez Espinoza");
+		marvinGilberto.setDireccion("Guatemala,Guatemala");
+		marvinGilberto.setEmail("amdmarvin.lopez@gmail.com");
+		marvinGilberto.setTelefono("33128076");
+		
+		System.out.println(marvinGilberto.getApellidos() + " " + marvinGilberto.getNombres() + " " + marvinGilberto.getEmail());
+		
+		Estudiante leonardoDonis = new Estudiante();
+		
+		Profesor edwinTumax =  new Profesor();
+		
+		
+	}
+
+}

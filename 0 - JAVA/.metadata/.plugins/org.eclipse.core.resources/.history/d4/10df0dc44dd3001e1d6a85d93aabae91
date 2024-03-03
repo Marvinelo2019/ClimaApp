@@ -1,0 +1,56 @@
+package org.marvinlopez.bean;
+
+public class Llamada {
+	 String numeroOrigen;
+	 String numeroDestino;
+	 int duracionSegundos;
+	 double costoTotal;
+	/**
+	 * @return the numeroOrigen
+	 */
+	public String getNumeroOrigen() {
+		return numeroOrigen;
+	}
+	/**
+	 * @param numeroOrigen the numeroOrigen to set
+	 */
+	public void setNumeroOrigen(String numeroOrigen) {
+		this.numeroOrigen = numeroOrigen;
+	}
+	/**
+	 * @return the numeroDestino
+	 */
+	public String getNumeroDestino() {
+		return numeroDestino;
+	}
+	/**
+	 * @param numeroDestino the numeroDestino to set
+	 */
+	public void setNumeroDestino(String numeroDestino) {
+		this.numeroDestino = numeroDestino;
+	}
+	/**
+	 * @return the duracionSegundos
+	 */
+	public int getDuracionSegundos() {
+		return duracionSegundos;
+	}
+	/**
+	 * @param duracionSegundos the duracionSegundos to set
+	 */
+	public void setDuracionSegundos(int duracionSegundos) {
+		this.duracionSegundos = duracionSegundos;
+	}
+	/**
+	 * @return the costoTotal
+	 */
+	public double getCostoTotal() {
+		return costoTotal;
+	}
+	/**
+	 * @param costoTotal the costoTotal to set
+	 */
+	public void setCostoTotal(double costoTotal) {
+		this.costoTotal = costoTotal;
+	}	
+}

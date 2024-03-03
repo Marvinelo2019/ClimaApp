@@ -1,0 +1,8 @@
+package org.marvinlopez.bean;
+
+public class Llamada {
+	 String numeroOrigen;
+	 String numeroDestino;
+	 int duracionSegundos;
+	 double costoTotal;	
+}

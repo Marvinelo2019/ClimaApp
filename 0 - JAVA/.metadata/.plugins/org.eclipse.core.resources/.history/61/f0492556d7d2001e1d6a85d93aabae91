@@ -1,0 +1,14 @@
+package org.marvinlopez.bean;
+
+import org.marvinlopez.servicio.CentralTelefonica;
+
+public class LlamadaLocal extends Llamada implements CentralTelefonica {
+
+	static final double COSTO_SEGUNDO = 0.25;
+
+	@Override
+	public void registrarLlamada() {
+		// TODO Auto-generated method stub
+		
+	}
+}
